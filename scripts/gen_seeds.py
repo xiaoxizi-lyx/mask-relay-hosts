@@ -119,14 +119,23 @@ def load_ipverse(wanted):
 # ------------------------------------------------------------- IP API ----
 
 class IPApi:
-    def __init__(self, base, key, cap):
-        self.base, self.key, self.cap = base, key, cap
-        self.calls, self.lock, self.cache = 0, threading.Lock(), {}
+    """IP API 查询，带持久缓存（seeds/geo_cache.json）。成功和失败的结果都缓存，超过 ttl_days 天重新查。"""
+
+    def __init__(self, base, key, cap, cache_path, ttl_days):
+        self.base, self.key, self.cap, self.path = base, key, cap, cache_path
+        self.calls, self.hits, self.lock = 0, 0, threading.Lock()
+        self.disk = {}
+        if os.path.exists(cache_path):
+            with open(cache_path, encoding="utf-8") as f:
+                for ip, v in json.load(f).items():
+                    if (TODAY - dt.date.fromisoformat(v["date"])).days <= ttl_days:
+                        self.disk[ip] = v
 
     def lookup(self, ip):
         with self.lock:
-            if ip in self.cache:
-                return self.cache[ip]
+            if ip in self.disk:
+                self.hits += 1
+                return {k: v for k, v in self.disk[ip].items() if k != "date"}
             if self.calls >= self.cap:
                 return None
             self.calls += 1
@@ -145,11 +154,19 @@ class IPApi:
             except Exception as e:
                 last = e
             time.sleep(1 + i)
-        if geo is None and last is not None:
+        if geo is None:
             log("  ! IP API 查询 %s 失败: %s" % (ip, last))
+            return None
+        brief = geo_brief(geo)
         with self.lock:
-            self.cache[ip] = geo
-        return geo
+            self.disk[ip] = dict(brief, date=TODAY.isoformat())
+        return brief
+
+    def save(self):
+        items = sorted(self.disk.items(), key=lambda kv: tuple(int(x) for x in kv[0].split(".")))
+        with open(self.path, "w", encoding="utf-8") as f:
+            f.write("{\n" + ",\n".join("%s: %s" % (json.dumps(k), json.dumps(v, ensure_ascii=False))
+                                       for k, v in items) + "\n}\n")
 
 
 def geo_brief(g):
@@ -190,46 +207,73 @@ def candidate_nets(asn, ipv4, probe_prefixes):
     return nets
 
 
-def choose_asns(cc, aspop, atlas_probes, meta, cfg):
-    picks = {}   # asn -> {source, users_pct, atlas_probes}
-    excluded = set(cfg["exclude_asns"].get(cc, []))
-    if cc not in cfg["aspop_unreliable"]:
-        for cats in (cfg["asn_categories"], cfg["fallback_categories"]):
-            cum = 0
-            for r in aspop.get(cc, [])[:cfg["aspop_scan_rows"]]:
-                m = meta.get(r["asn"])
-                if r["asn"] in excluded or not m or not m["ipv4"] or m["category"] not in cats:
-                    continue
-                if picks and r["pct"] < cfg["aspop_min_pct"]:
-                    break
-                picks[r["asn"]] = {"source": ["aspop"], "users_pct": r["pct"], "as_name": m["name"] or r["descr"]}
-                cum += r["pct"]
-                if cum >= cfg["aspop_cover_pct"] or len(picks) >= cfg["aspop_max_asns"]:
-                    break
-            if picks:
-                break
-    # Atlas：aspop 失真的地区作为主数据源；其他地区只补充在 aspop 中也有一定用户量的 ASN
+def candidates(cc, aspop, atlas_probes, meta, cfg):
+    """返回 (aspop 候选, Atlas 候选, aspop 是否不可用)，都按用户量/探针数从高到低排列。"""
+    excluded = set(cfg["global_exclude_asns"]) | set(cfg["exclude_asns"].get(cc, []))
     unreliable = cc in cfg["aspop_unreliable"] or not aspop.get(cc)
+    probes = atlas_probes.get(cc, Counter())
+    rows = {r["asn"]: r for r in aspop.get(cc, [])}
+
+    def usable(asn):
+        m = meta.get(asn)
+        return asn not in excluded and m and m["ipv4"]
+
+    def info(asn, source):
+        r = rows.get(asn)
+        return {"source": [source], "users_pct": r["pct"] if r else None,
+                "as_name": meta[asn]["name"] or (r or {}).get("descr", ""), "atlas_probes": probes.get(asn, 0)}
+
+    prim = []
+    if not unreliable:
+        for r in aspop[cc][:cfg["aspop_scan_rows"]]:
+            # ipverse 的分类并不总准（如尼日利亚三大运营商被标成 hosting），用户占比够高的不看分类
+            if usable(r["asn"]) and (meta[r["asn"]]["category"] in cfg["asn_categories"]
+                                     or r["pct"] >= cfg["aspop_trust_pct"]):
+                prim.append((r["asn"], info(r["asn"], "aspop")))
+    extra = []
+    for asn, cnt in probes.most_common():
+        if cnt < cfg["atlas_min_probes"]:
+            break
+        if not usable(asn) or meta[asn]["category"] not in cfg["asn_categories"]:
+            continue
+        if not unreliable and (rows.get(asn, {}).get("pct", 0) < cfg["atlas_min_aspop_pct"]):
+            continue
+        extra.append((asn, info(asn, "atlas")))
+    return prim, extra, unreliable
+
+
+def process_country(cc, aspop, atlas_probes, atlas_prefixes, meta, prev, prev_by_subnet, api, cfg):
+    prim, extra, unreliable = candidates(cc, aspop, atlas_probes, meta, cfg)
+    seeds, accepted, cum = [], {}, 0
+    # 按用户量依次尝试，只有核对通过、真正拿到子网的 ASN 才计入覆盖率
+    for asn, info in prim:
+        if cum >= cfg["aspop_cover_pct"] or len(accepted) >= cfg["aspop_max_asns"]:
+            break
+        if accepted and info["users_pct"] < cfg["aspop_min_pct"]:
+            break
+        got = seeds_for_asn(cc, asn, info, meta, atlas_prefixes, prev, api, cfg)
+        if got:
+            seeds += got
+            accepted[asn] = got
+            cum += info["users_pct"]
+    # Atlas：aspop 失真/缺失的地区作为主数据源，其余地区少量补充
     atlas_max = cfg["aspop_max_asns"] if unreliable else cfg["atlas_max_asns"]
     added = 0
-    for asn, cnt in atlas_probes.get(cc, Counter()).most_common():
-        if added >= atlas_max or cnt < cfg["atlas_min_probes"]:
+    for asn, info in extra:
+        if added >= atlas_max:
             break
-        m = meta.get(asn)
-        if asn in excluded or not m or not m["ipv4"] or m["category"] not in cfg["asn_categories"]:
+        if asn in accepted:
+            for x in accepted[asn]:
+                if "atlas" not in x["source"]:
+                    x["source"] += "+atlas"
             continue
-        if asn in picks:
-            picks[asn]["source"].append("atlas")
-            continue
-        aspop_row = next((r for r in aspop.get(cc, []) if r["asn"] == asn), None)
-        if not unreliable and (aspop_row is None or aspop_row["pct"] < cfg["atlas_min_aspop_pct"]):
-            continue
-        picks[asn] = {"source": ["atlas"], "users_pct": aspop_row["pct"] if aspop_row else None,
-                      "as_name": m["name"] or (aspop_row or {}).get("descr", "")}
-        added += 1
-    for asn, p in picks.items():
-        p["atlas_probes"] = atlas_probes.get(cc, Counter()).get(asn, 0)
-    return picks
+        got = seeds_for_asn(cc, asn, info, meta, atlas_prefixes, prev, api, cfg)
+        if got:
+            seeds += got
+            accepted[asn] = got
+            added += 1
+    seeds += manual_seeds(cc, cfg["manual"].get(cc, []), prev_by_subnet, api, cfg, aspop, meta)
+    return seeds
 
 
 def seeds_for_asn(cc, asn, pick, meta, atlas_prefixes, prev, api, cfg):
@@ -262,7 +306,7 @@ def seeds_for_asn(cc, asn, pick, meta, atlas_prefixes, prev, api, cfg):
         if not g:
             continue
         if g.get("country_code") == cc:
-            out.append(dict(base, subnet=str(sub), prefix=str(net), geo=geo_brief(g), verified=TODAY.isoformat()))
+            out.append(dict(base, subnet=str(sub), prefix=str(net), geo=g, verified=TODAY.isoformat()))
             used_prefixes.add(net)
     return out
 
@@ -275,8 +319,7 @@ def manual_seeds(cc, items, prev_by_subnet, api, cfg, aspop, meta):
         if old and (TODAY - dt.date.fromisoformat(old["verified"])).days <= cfg["reverify_days"]:
             g, ver = old["geo"], old["verified"]
         else:
-            raw = api.lookup(str(ipaddress.ip_network(sub).network_address + 1))
-            g, ver = (geo_brief(raw) if raw else None), TODAY.isoformat()
+            g, ver = api.lookup(str(ipaddress.ip_network(sub).network_address + 1)), TODAY.isoformat()
         if not g or g.get("country_code") != cc:
             log("  ! 人工子网 %s 不在 %s（IP API: %s），已跳过" % (sub, cc, g and g.get("country_code")))
             continue
@@ -342,6 +385,8 @@ def main():
     ap.add_argument("--out-dir", default=os.path.join(ROOT, "seeds"))
     ap.add_argument("--only", help="只处理这些国家/地区代码，逗号分隔（调试用）")
     args = ap.parse_args()
+    if args.only and os.path.abspath(args.out_dir) == os.path.join(ROOT, "seeds"):
+        raise SystemExit("--only 会只输出部分地区，请配合 --out-dir 写到其他目录，避免覆盖仓库里的全量结果")
 
     base, key = os.environ.get("IP_API_BASE", "").strip(), os.environ.get("IP_KEY", "").strip()
     if not base or not key:
@@ -372,20 +417,14 @@ def main():
         wanted.update(a for a, n in atlas_probes.get(cc, Counter()).items() if n >= cfg["atlas_min_probes"])
     meta = load_ipverse(wanted)
 
-    api = IPApi(base, key, cfg["max_lookups_total"])
-    plan = [(cc, asn, p) for cc in ccs for asn, p in choose_asns(cc, aspop, atlas_probes, meta, cfg).items()]
-    log("计划：%d 个国家/地区，%d 个 (地区, ASN) 组合" % (len(ccs), len(plan)))
-
+    api = IPApi(base, key, cfg["max_lookups_total"], os.path.join(args.out_dir, "geo_cache.json"),
+                cfg["reverify_days"])
+    log("处理 %d 个国家/地区（IP API 缓存 %d 条）" % (len(ccs), len(api.disk)))
     with ThreadPoolExecutor(8) as ex:
-        results = list(ex.map(lambda t: seeds_for_asn(t[0], t[1], t[2], meta, atlas_prefixes, prev, api, cfg), plan))
-
-    regions = {}
-    per_cc = defaultdict(list)
-    for (cc, asn, p), seeds in zip(plan, results):
-        per_cc[cc].extend(seeds)
-    for cc in ccs:
-        per_cc[cc].extend(manual_seeds(cc, cfg["manual"].get(cc, []), prev_by_subnet, api, cfg, aspop, meta))
-    missing = []
+        results = list(ex.map(lambda cc: process_country(cc, aspop, atlas_probes, atlas_prefixes, meta, prev,
+                                                         prev_by_subnet, api, cfg), ccs))
+    per_cc = dict(zip(ccs, results))
+    regions, missing = {}, []
     for cc in ccs:
         seeds = per_cc[cc]
         if not seeds:
@@ -405,12 +444,14 @@ def main():
     sources = {"aspop": ASPOP_URL, "atlas": ATLAS_URL, "ipverse": IPVERSE_URL,
                "aspop_unreliable": sorted(cfg["aspop_unreliable"])}
     changed = write_outputs(args.out_dir, regions, sources)
+    api.save()
 
     n_seeds = sum(len(r["seeds"]) for r in regions.values())
     reused = sum(1 for r in regions.values() for s in r["seeds"] if s["subnet"] in prev_by_subnet)
-    summary = ("国家/地区 %d 个（无合格子网 %d 个：%s）；子网 %d 个（沿用上次 %d，新增 %d）；本次 IP API 调用 %d 次；输出%s" %
+    summary = ("国家/地区 %d 个（无合格子网 %d 个：%s）；子网 %d 个（沿用上次 %d，新增 %d）；"
+               "IP API 调用 %d 次、命中缓存 %d 次；输出%s" %
                (len(regions), len(missing), ",".join(missing) or "无", n_seeds, reused, n_seeds - reused,
-                api.calls, "已更新" if changed else "无变化"))
+                api.calls, api.hits, "已更新" if changed else "无变化"))
     log(summary)
     if os.environ.get("GITHUB_STEP_SUMMARY"):
         with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
