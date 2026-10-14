@@ -1,0 +1,36 @@
+name: ecs-seeds
+
+on:
+  schedule:
+    - cron: "37 4 * * 1"   # 每周一 04:37 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ecs-seeds
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Generate ECS seed subnets
+        env:
+          IP_KEY: ${{ secrets.IP_KEY }}
+          IP_API_BASE: ${{ secrets.IP_API_BASE }}
+        run: python3 scripts/gen_seeds.py
+
+      - name: Commit changes (signed by GitHub)
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python3 scripts/gh_signed_commit.py --paths seeds \
+            --message "seeds: 更新 ECS 候选子网 $(date -u +%Y-%m-%d)" \
+            --body "由 ${{ github.workflow }} 第 ${{ github.run_number }} 次运行生成：${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
