@@ -1,0 +1,61 @@
+ecs_region,ecs_subnet,queries,node_country,node_city,operator,share_pct
+CN,117.141.141.0/24,64,IN,Mumbai,Apple,26.6
+CN,117.141.141.0/24,64,KR,Seoul,Apple,12.5
+CN,117.141.141.0/24,64,US,San Jose,Apple,10.9
+CN,117.141.141.0/24,64,JP,Tokyo,Apple,10.9
+CN,117.141.141.0/24,64,US,Los Angeles,Apple,9.4
+CN,117.141.141.0/24,64,JP,Osaka,Apple,7.8
+CN,117.141.141.0/24,64,US,Seattle,Apple,7.8
+CN,117.141.141.0/24,64,SG,Singapore,Apple,6.2
+CN,117.141.141.0/24,64,JP,Ibaraki,Akamai,4.7
+CN,117.141.141.0/24,64,JP,Tokyo,Akamai,4.7
+CN,117.141.141.0/24,64,JP,Osaka,Akamai,3.1
+HK,112.118.0.0/24,64,IN,Mumbai,Apple,26.6
+HK,112.118.0.0/24,64,JP,Tokyo,Akamai,14.1
+HK,112.118.0.0/24,64,JP,Ibaraki,Akamai,12.5
+HK,112.118.0.0/24,64,JP,Osaka,Apple,12.5
+HK,112.118.0.0/24,64,JP,Osaka,Akamai,10.9
+HK,112.118.0.0/24,64,US,Los Angeles,Apple,10.9
+HK,112.118.0.0/24,64,JP,Tokyo,Apple,10.9
+HK,112.118.0.0/24,64,KR,Seoul,Apple,4.7
+HK,112.118.0.0/24,64,SG,Singapore,Apple,4.7
+HK,112.118.0.0/24,64,US,Seattle,Apple,1.6
+HK,112.118.0.0/24,64,TW,New Taipei City,Apple,1.6
+HK,112.118.0.0/24,64,US,San Jose,Apple,1.6
+TW,61.216.0.0/24,16,TW,New Taipei City,Apple,100.0
+JP,126.100.0.0/24,16,JP,Osaka,Apple,100.0
+KR,121.134.0.0/24,16,KR,Seoul,Apple,100.0
+SG,165.21.0.0/24,16,SG,Singapore,Apple,100.0
+IN,49.36.0.0/24,16,IN,Mumbai,Akamai,100.0
+ID,36.64.0.0/24,16,SG,Singapore,Apple,100.0
+AU,1.144.0.0/24,16,AU,Sydney,Apple,100.0
+AE,94.56.0.0/24,16,AT,Vienna,Akamai,100.0
+TR,78.160.0.0/24,16,TR,Istanbul,Akamai,100.0
+RU,95.24.0.0/24,64,ES,Madrid,Apple,35.9
+RU,95.24.0.0/24,64,DE,Berlin,Apple,14.1
+RU,95.24.0.0/24,64,FR,Clichy,Apple,10.9
+RU,95.24.0.0/24,64,SE,Kista,Apple,9.4
+RU,95.24.0.0/24,64,GB,Manchester,Apple,7.8
+RU,95.24.0.0/24,64,NL,Hoofddorp,Apple,6.2
+RU,95.24.0.0/24,64,DK,Viborg,Apple,6.2
+RU,95.24.0.0/24,64,DE,Frankfurt am Main,Apple,4.7
+RU,95.24.0.0/24,64,GB,Slough,Apple,4.7
+GB,86.128.0.0/24,16,GB,Slough,Apple,100.0
+DE,79.192.0.0/24,16,DE,Frankfurt am Main,Apple,100.0
+FR,90.0.0.0/24,16,FR,Clichy,Apple,100.0
+NL,77.160.0.0/24,16,NL,Hoofddorp,Apple,100.0
+ZA,105.0.0.0/24,16,ZA,Midrand,Apple,100.0
+US,73.0.0.0/24,16,US,Miami,Apple,100.0
+CA,70.24.0.0/24,16,CA,Toronto,Akamai,100.0
+MX,187.188.0.0/24,64,US,Ashburn,Apple,21.9
+MX,187.188.0.0/24,64,US,Dallas,Apple,14.1
+MX,187.188.0.0/24,64,US,Secaucus,Apple,12.5
+MX,187.188.0.0/24,64,US,Englewood,Apple,12.5
+MX,187.188.0.0/24,64,US,Atlanta,Apple,10.9
+MX,187.188.0.0/24,64,US,Minneapolis,Apple,7.8
+MX,187.188.0.0/24,64,US,Boston,Apple,4.7
+MX,187.188.0.0/24,64,US,Los Angeles,Apple,4.7
+MX,187.188.0.0/24,64,US,San Jose,Apple,4.7
+MX,187.188.0.0/24,64,US,Miami,Apple,3.1
+MX,187.188.0.0/24,64,US,Seattle,Apple,3.1
+BR,177.32.0.0/24,16,BR,São Paulo,Akamai,100.0

@@ -21,6 +21,8 @@ Apple 用 Route 53 按用户所在网络分配入口节点，有时会把整个�
 
 每次更新都会发布 [release](../../releases)，附全部文件的 zip，并用中英文列出各地区的入口节点、相对上次增减的 IP。
 
+建立本仓库之前的调查（各地区的调度规律、2026-10 香港节点被撤出与恢复的经过、香港 Apple 与 Akamai 节点的实测对比）见 **[研究记录](docs/research.md)**。
+
 ### dnsmasq（推荐，在路由器上对全家设备生效）
 
 把文件内容追加到 dnsmasq 配置后重启 dnsmasq：
@@ -56,6 +58,8 @@ nslookup -type=AAAA mask.icloud.com 192.168.1.1
 - **设备需使用你配置的 DNS**：设备上若装了 DoH/DoT 描述文件或使用其他 DNS，路由器上的配置不会生效。
 - **固定的只是入口节点**；出口节点及其地区仍由 Apple 分配。
 - 若某组的入口节点被 Apple 永久下线，在下一次更新前该组可能暂时不可用，请关注 release。
+- 本仓库依赖 TUM 的扫描；TUM 若停更（2025-10 至 2026-06 曾中断约 8 个月），hosts 会停在最后一期数据。
+- **香港用户请优先用 `HK-Apple`**：实测强制使用香港 Akamai 节点能连通，但又慢又卡（详见研究记录）。
 
 ## 数据与更新
 
@@ -83,6 +87,8 @@ Pin the iCloud Private Relay ingress hostnames `mask.icloud.com` and `mask-h2.ic
 
 Route 53 assigns ingress nodes by client network and sometimes moves a whole region elsewhere. On 2026-10-13, for example, Apple's Hong Kong ingress nodes were temporarily taken out of rotation, and clients in Hong Kong, Macau and mainland China were spread across Mumbai, Japan, Korea and the US West Coast for two days, even though the Hong Kong servers stayed online.
 
+The investigation behind this repository — steering patterns by region, the October 2026 Hong Kong withdrawal and recovery, and a field comparison of the Hong Kong Apple and Akamai nodes — is in the **[research notes](docs/research.md#english-summary)**.
+
 **Quick start**: pick a group in the **[group index](hosts/README.md)** (e.g. `HK-Apple` = Hong Kong, operated by Apple) and use the file for your software:
 
 | Software | File | How |
@@ -99,6 +105,8 @@ Notes:
 - Each hosts file holds **at most 24 IPs** (fits a 512-byte non-EDNS DNS answer), spread across cities and /24s; `ip-list` has every IP. Private Relay picks one of the returned addresses at random.
 - **Groups**: one group per region (`HK`, `TW`, …); regions served by both Apple and Akamai also get per-operator groups (`HK-Apple`, `HK-Akamai`).
 - Devices must use the DNS you configure (no DoH/DoT profiles). Only the ingress is pinned; the egress is still chosen by Apple.
+- Prefer `HK-Apple` in Hong Kong: pinning to the Hong Kong Akamai node works but was slow and laggy in our field test.
+- This repository depends on TUM's scans; if they pause (they did for ~8 months, 2025-10 to 2026-06), the hosts files stay at the last scan.
 - **Data**: ingress IPs come from [TUM's weekly ECS scans](https://relay-networks.github.io/) (scanned Mondays, usually published Thursdays). The last 4 non-empty scans are used: IPs in the latest scan are always kept; IPs seen only in older scans are kept while TCP 443 is still reachable, so a group does not vanish just because a scan happened during a temporary Route 53 withdrawal. Each /24 is geolocated once and cached for 30 days.
 - A daily [workflow](.github/workflows/update-hosts.yml) checks whether TUM has published a new scan and only then rebuilds (so the reachability check also runs weekly); when the ingress set changes it commits (signed by GitHub) and publishes a [release](../../releases) with a zip and bilingual notes listing every region and the IPs added/removed. Run it manually with `force` to rebuild anyway.
 

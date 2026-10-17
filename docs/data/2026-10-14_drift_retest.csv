@@ -1,0 +1,152 @@
+ecs_region,ecs_subnet,isp,queries,node_country,node_city,operator,share_pct
+MO,202.175.27.0/24,CTM,128,IN,Mumbai,Apple,21.1
+MO,202.175.27.0/24,CTM,128,JP,Osaka,Akamai,14.1
+MO,202.175.27.0/24,CTM,128,JP,Tokyo,Apple,13.3
+MO,202.175.27.0/24,CTM,128,KR,Seoul,Apple,10.9
+MO,202.175.27.0/24,CTM,128,US,Los Angeles,Apple,9.4
+MO,202.175.27.0/24,CTM,128,JP,Osaka,Apple,9.4
+MO,202.175.27.0/24,CTM,128,US,Seattle,Apple,6.2
+MO,202.175.27.0/24,CTM,128,JP,Ibaraki,Akamai,6.2
+MO,202.175.27.0/24,CTM,128,JP,Tokyo,Akamai,6.2
+MO,202.175.27.0/24,CTM,128,US,San Jose,Apple,3.9
+MO,202.175.27.0/24,CTM,128,TW,New Taipei City,Apple,3.1
+MO,202.175.27.0/24,CTM,128,SG,Singapore,Apple,2.3
+MO,60.246.0.0/24,CTM,128,IN,Mumbai,Apple,18.8
+MO,60.246.0.0/24,CTM,128,JP,Osaka,Akamai,11.7
+MO,60.246.0.0/24,CTM,128,JP,Tokyo,Akamai,10.9
+MO,60.246.0.0/24,CTM,128,JP,Osaka,Apple,10.9
+MO,60.246.0.0/24,CTM,128,JP,Tokyo,Apple,10.2
+MO,60.246.0.0/24,CTM,128,US,Los Angeles,Apple,8.6
+MO,60.246.0.0/24,CTM,128,US,San Jose,Apple,8.6
+MO,60.246.0.0/24,CTM,128,JP,Ibaraki,Akamai,7.8
+MO,60.246.0.0/24,CTM,128,KR,Seoul,Apple,7.0
+MO,60.246.0.0/24,CTM,128,US,Seattle,Apple,6.2
+MO,60.246.0.0/24,CTM,128,TW,New Taipei City,Apple,3.9
+MO,60.246.0.0/24,CTM,128,SG,Singapore,Apple,3.1
+CN,117.141.141.0/24,移动·广西,128,IN,Mumbai,Apple,17.2
+CN,117.141.141.0/24,移动·广西,128,JP,Ibaraki,Akamai,14.1
+CN,117.141.141.0/24,移动·广西,128,JP,Tokyo,Akamai,14.1
+CN,117.141.141.0/24,移动·广西,128,JP,Osaka,Apple,12.5
+CN,117.141.141.0/24,移动·广西,128,JP,Tokyo,Apple,10.2
+CN,117.141.141.0/24,移动·广西,128,JP,Osaka,Akamai,9.4
+CN,117.141.141.0/24,移动·广西,128,KR,Seoul,Apple,8.6
+CN,117.141.141.0/24,移动·广西,128,US,Seattle,Apple,7.8
+CN,117.141.141.0/24,移动·广西,128,US,San Jose,Apple,7.8
+CN,117.141.141.0/24,移动·广西,128,US,Los Angeles,Apple,7.0
+CN,117.141.141.0/24,移动·广西,128,SG,Singapore,Apple,3.9
+CN,117.141.141.0/24,移动·广西,128,TW,New Taipei City,Apple,1.6
+CN,121.29.51.0/24,联通·河北,128,IN,Mumbai,Apple,16.4
+CN,121.29.51.0/24,联通·河北,128,US,Los Angeles,Apple,14.1
+CN,121.29.51.0/24,联通·河北,128,JP,Osaka,Akamai,13.3
+CN,121.29.51.0/24,联通·河北,128,US,San Jose,Apple,10.2
+CN,121.29.51.0/24,联通·河北,128,JP,Tokyo,Akamai,9.4
+CN,121.29.51.0/24,联通·河北,128,JP,Osaka,Apple,8.6
+CN,121.29.51.0/24,联通·河北,128,JP,Tokyo,Apple,8.6
+CN,121.29.51.0/24,联通·河北,128,JP,Ibaraki,Akamai,7.8
+CN,121.29.51.0/24,联通·河北,128,KR,Seoul,Apple,6.2
+CN,121.29.51.0/24,联通·河北,128,SG,Singapore,Apple,5.5
+CN,121.29.51.0/24,联通·河北,128,US,Seattle,Apple,5.5
+CN,121.29.51.0/24,联通·河北,128,TW,New Taipei City,Apple,2.3
+CN,116.224.0.0/24,电信·上海,128,JP,Osaka,Akamai,21.9
+CN,116.224.0.0/24,电信·上海,128,IN,Mumbai,Apple,13.3
+CN,116.224.0.0/24,电信·上海,128,US,San Jose,Apple,10.9
+CN,116.224.0.0/24,电信·上海,128,KR,Seoul,Apple,10.9
+CN,116.224.0.0/24,电信·上海,128,JP,Tokyo,Apple,8.6
+CN,116.224.0.0/24,电信·上海,128,JP,Osaka,Apple,8.6
+CN,116.224.0.0/24,电信·上海,128,JP,Ibaraki,Akamai,8.6
+CN,116.224.0.0/24,电信·上海,128,JP,Tokyo,Akamai,8.6
+CN,116.224.0.0/24,电信·上海,128,US,Seattle,Apple,4.7
+CN,116.224.0.0/24,电信·上海,128,SG,Singapore,Apple,4.7
+CN,116.224.0.0/24,电信·上海,128,US,Los Angeles,Apple,4.7
+CN,116.224.0.0/24,电信·上海,128,TW,New Taipei City,Apple,3.1
+HK,112.118.0.0/24,HKT,128,JP,Osaka,Akamai,18.0
+HK,112.118.0.0/24,HKT,128,IN,Mumbai,Apple,16.4
+HK,112.118.0.0/24,HKT,128,JP,Ibaraki,Akamai,10.9
+HK,112.118.0.0/24,HKT,128,JP,Tokyo,Akamai,10.9
+HK,112.118.0.0/24,HKT,128,JP,Osaka,Apple,10.2
+HK,112.118.0.0/24,HKT,128,US,Seattle,Apple,9.4
+HK,112.118.0.0/24,HKT,128,JP,Tokyo,Apple,9.4
+HK,112.118.0.0/24,HKT,128,SG,Singapore,Apple,8.6
+HK,112.118.0.0/24,HKT,128,US,Los Angeles,Apple,6.2
+HK,112.118.0.0/24,HKT,128,US,San Jose,Apple,4.7
+HK,112.118.0.0/24,HKT,128,KR,Seoul,Apple,4.7
+HK,112.118.0.0/24,HKT,128,TW,New Taipei City,Apple,1.6
+HK,59.148.0.0/24,HKBN,128,IN,Mumbai,Apple,23.4
+HK,59.148.0.0/24,HKBN,128,JP,Osaka,Akamai,14.1
+HK,59.148.0.0/24,HKBN,128,US,Los Angeles,Apple,11.7
+HK,59.148.0.0/24,HKBN,128,JP,Osaka,Apple,10.2
+HK,59.148.0.0/24,HKBN,128,US,San Jose,Apple,8.6
+HK,59.148.0.0/24,HKBN,128,US,Seattle,Apple,7.8
+HK,59.148.0.0/24,HKBN,128,KR,Seoul,Apple,7.8
+HK,59.148.0.0/24,HKBN,128,JP,Tokyo,Apple,5.5
+HK,59.148.0.0/24,HKBN,128,TW,New Taipei City,Apple,4.7
+HK,59.148.0.0/24,HKBN,128,JP,Ibaraki,Akamai,3.9
+HK,59.148.0.0/24,HKBN,128,JP,Tokyo,Akamai,3.9
+HK,59.148.0.0/24,HKBN,128,SG,Singapore,Apple,2.3
+RU,95.24.0.0/24,Beeline·罗斯托夫,128,ES,Madrid,Apple,25.8
+RU,95.24.0.0/24,Beeline·罗斯托夫,128,GB,Slough,Apple,18.8
+RU,95.24.0.0/24,Beeline·罗斯托夫,128,DE,Frankfurt am Main,Apple,15.6
+RU,95.24.0.0/24,Beeline·罗斯托夫,128,FR,Clichy,Apple,14.8
+RU,95.24.0.0/24,Beeline·罗斯托夫,128,SE,Kista,Apple,7.8
+RU,95.24.0.0/24,Beeline·罗斯托夫,128,GB,Manchester,Apple,6.2
+RU,95.24.0.0/24,Beeline·罗斯托夫,128,DE,Berlin,Apple,4.7
+RU,95.24.0.0/24,Beeline·罗斯托夫,128,NL,Hoofddorp,Apple,4.7
+RU,95.24.0.0/24,Beeline·罗斯托夫,128,DK,Viborg,Apple,1.6
+RU,178.176.0.0/24,MegaFon·莫斯科,128,DE,Frankfurt am Main,Apple,19.5
+RU,178.176.0.0/24,MegaFon·莫斯科,128,ES,Madrid,Apple,15.6
+RU,178.176.0.0/24,MegaFon·莫斯科,128,GB,Slough,Apple,15.6
+RU,178.176.0.0/24,MegaFon·莫斯科,128,GB,Manchester,Apple,12.5
+RU,178.176.0.0/24,MegaFon·莫斯科,128,FR,Clichy,Apple,11.7
+RU,178.176.0.0/24,MegaFon·莫斯科,128,SE,Kista,Apple,8.6
+RU,178.176.0.0/24,MegaFon·莫斯科,128,NL,Hoofddorp,Apple,6.2
+RU,178.176.0.0/24,MegaFon·莫斯科,128,DK,Viborg,Apple,5.5
+RU,178.176.0.0/24,MegaFon·莫斯科,128,DE,Berlin,Apple,4.7
+RU,5.18.0.0/24,ER-Telecom·圣彼得堡,128,FR,Clichy,Apple,21.1
+RU,5.18.0.0/24,ER-Telecom·圣彼得堡,128,ES,Madrid,Apple,20.3
+RU,5.18.0.0/24,ER-Telecom·圣彼得堡,128,DE,Frankfurt am Main,Apple,15.6
+RU,5.18.0.0/24,ER-Telecom·圣彼得堡,128,GB,Slough,Apple,14.1
+RU,5.18.0.0/24,ER-Telecom·圣彼得堡,128,DE,Berlin,Apple,9.4
+RU,5.18.0.0/24,ER-Telecom·圣彼得堡,128,GB,Manchester,Apple,9.4
+RU,5.18.0.0/24,ER-Telecom·圣彼得堡,128,SE,Kista,Apple,5.5
+RU,5.18.0.0/24,ER-Telecom·圣彼得堡,128,NL,Hoofddorp,Apple,2.3
+RU,5.18.0.0/24,ER-Telecom·圣彼得堡,128,DK,Viborg,Apple,2.3
+MX,187.188.0.0/24,Totalplay,128,US,Dallas,Apple,28.1
+MX,187.188.0.0/24,Totalplay,128,US,Ashburn,Apple,16.4
+MX,187.188.0.0/24,Totalplay,128,US,Englewood,Apple,10.2
+MX,187.188.0.0/24,Totalplay,128,US,Secaucus,Apple,7.8
+MX,187.188.0.0/24,Totalplay,128,US,Atlanta,Apple,6.2
+MX,187.188.0.0/24,Totalplay,128,US,Los Angeles,Apple,5.5
+MX,187.188.0.0/24,Totalplay,128,US,Boston,Apple,5.5
+MX,187.188.0.0/24,Totalplay,128,US,Miami,Apple,5.5
+MX,187.188.0.0/24,Totalplay,128,US,Seattle,Apple,4.7
+MX,187.188.0.0/24,Totalplay,128,US,San Jose,Apple,3.9
+MX,187.188.0.0/24,Totalplay,128,US,Minneapolis,Apple,3.1
+MX,187.188.0.0/24,Totalplay,128,US,Mesa,Apple,3.1
+MX,189.216.0.0/24,izzi,128,US,Dallas,Apple,21.9
+MX,189.216.0.0/24,izzi,128,US,Ashburn,Apple,19.5
+MX,189.216.0.0/24,izzi,128,US,Atlanta,Apple,10.9
+MX,189.216.0.0/24,izzi,128,US,Englewood,Apple,9.4
+MX,189.216.0.0/24,izzi,128,US,Minneapolis,Apple,8.6
+MX,189.216.0.0/24,izzi,128,US,Secaucus,Apple,8.6
+MX,189.216.0.0/24,izzi,128,US,Los Angeles,Apple,4.7
+MX,189.216.0.0/24,izzi,128,US,San Jose,Apple,4.7
+MX,189.216.0.0/24,izzi,128,US,Miami,Apple,3.9
+MX,189.216.0.0/24,izzi,128,US,Seattle,Apple,3.1
+MX,189.216.0.0/24,izzi,128,US,Mesa,Apple,2.3
+MX,189.216.0.0/24,izzi,128,US,Boston,Apple,2.3
+MX,189.203.0.0/24,AT&T MX,128,US,Ashburn,Apple,22.7
+MX,189.203.0.0/24,AT&T MX,128,US,Englewood,Apple,15.6
+MX,189.203.0.0/24,AT&T MX,128,US,Dallas,Apple,12.5
+MX,189.203.0.0/24,AT&T MX,128,US,Minneapolis,Apple,9.4
+MX,189.203.0.0/24,AT&T MX,128,US,Atlanta,Apple,8.6
+MX,189.203.0.0/24,AT&T MX,128,US,Secaucus,Apple,8.6
+MX,189.203.0.0/24,AT&T MX,128,US,Seattle,Apple,8.6
+MX,189.203.0.0/24,AT&T MX,128,US,Boston,Apple,5.5
+MX,189.203.0.0/24,AT&T MX,128,US,Los Angeles,Apple,4.7
+MX,189.203.0.0/24,AT&T MX,128,US,Miami,Apple,1.6
+MX,189.203.0.0/24,AT&T MX,128,US,San Jose,Apple,1.6
+MX,189.203.0.0/24,AT&T MX,128,US,Mesa,Apple,0.8
+AE,94.56.0.0/24,Etisalat,128,AT,Vienna,Akamai,100.0
+AE,94.200.0.0/24,du,128,AT,Vienna,Akamai,100.0
+ID,36.64.0.0/24,Telkom,128,SG,Singapore,Apple,100.0
+ID,114.120.0.0/24,Telkomsel,128,SG,Singapore,Apple,100.0
