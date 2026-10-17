@@ -46,6 +46,12 @@ def changed_files(paths):
     return additions, deletions
 
 
+def set_output(key, value):
+    if os.environ.get("GITHUB_OUTPUT"):
+        with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
+            f.write("%s=%s\n" % (key, value))
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.strip().splitlines()[0])
     ap.add_argument("--paths", nargs="+", required=True, help="只提交这些路径下的改动")
@@ -61,6 +67,7 @@ def main():
     additions, deletions = changed_files(args.paths)
     if not additions and not deletions:
         print("没有改动，跳过提交")
+        set_output("sha", git("rev-parse", "HEAD").decode().strip())
         return
     changes = {
         "additions": [{"path": p, "contents": base64.b64encode(open(p, "rb").read()).decode()} for p in additions],
@@ -80,6 +87,7 @@ def main():
         sys.exit("提交失败：%s" % json.dumps(resp["errors"], ensure_ascii=False))
     commit = resp["data"]["createCommitOnBranch"]["commit"]
     print("已提交 %d 个新增/修改、%d 个删除：%s" % (len(additions), len(deletions), commit["url"]))
+    set_output("sha", commit["oid"])
     if os.environ.get("GITHUB_STEP_SUMMARY"):
         with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
             f.write("\n提交：%s\n" % commit["url"])

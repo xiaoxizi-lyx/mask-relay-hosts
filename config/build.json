@@ -1,0 +1,34 @@
+{
+  "repo_url": "https://github.com/xiaoxizi-lyx/mask-relay-hosts",
+  "domains": [
+    "mask.icloud.com",
+    "mask-h2.icloud.com"
+  ],
+  "tum_repo": "relay-networks/relay-networks.github.io",
+  "tum_branch": "main",
+  "tum_path": "ingress-ecs-scan-data/archive",
+  "window_scans": 4,
+  "stale_warning_days": 14,
+  "max_ips_per_hosts_file": 24,
+  "geo_ttl_days": 30,
+  "tcp_check": {
+    "port": 443,
+    "timeout": 3,
+    "attempts": 3,
+    "concurrency": 128,
+    "min_alive_ratio": 0.5
+  },
+  "operators": {
+    "AS714": "Apple",
+    "AS6185": "Apple",
+    "AS36183": "Akamai",
+    "AS20940": "Akamai",
+    "AS16625": "Akamai",
+    "AS13335": "Cloudflare",
+    "AS54113": "Fastly"
+  },
+  "city_zh_overrides": {
+    "Ibaraki": "茨木",
+    "Tseung Kwan O": "将军澳"
+  }
+}

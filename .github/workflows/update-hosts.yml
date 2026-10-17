@@ -1,0 +1,58 @@
+name: update-hosts
+
+on:
+  schedule:
+    - cron: "37 13 * * *"   # 每天 13:37 UTC；TUM 通常在每周四 12:20 UTC 左右发布当周一的扫描
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "TUM 没有新扫描时也重新生成 / Rebuild even without a new TUM scan"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-hosts
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Build hosts from the latest TUM scans
+        id: build
+        env:
+          IP_KEY: ${{ secrets.IP_KEY }}
+          IP_API_BASE: ${{ secrets.IP_API_BASE }}
+          GITHUB_TOKEN: ${{ github.token }}
+          FORCE: ${{ inputs.force }}
+        run: python3 scripts/build.py $([ "$FORCE" = "true" ] && echo --force)
+
+      - name: Commit changes (signed by GitHub)
+        id: commit
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          SCAN=$(python3 -c 'import json; print(json.load(open("data/ingress.json"))["tum"]["latest_scan"])')
+          python3 scripts/gh_signed_commit.py --paths hosts data \
+            --message "hosts: 更新入口节点（TUM ${SCAN}）" \
+            --body "由 update-hosts 生成：${RUN_URL}"
+
+      - name: Publish release
+        if: steps.build.outputs.release == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.build.outputs.tag }}
+          TITLE: ${{ steps.build.outputs.title }}
+          NOTES: ${{ steps.build.outputs.notes }}
+          ZIP: ${{ steps.build.outputs.zip }}
+          SHA: ${{ steps.commit.outputs.sha }}
+        run: gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --target "$SHA" --title "$TITLE" --notes-file "$NOTES" "$ZIP"
