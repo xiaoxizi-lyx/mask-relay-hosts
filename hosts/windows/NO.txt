@@ -1,0 +1,14 @@
+# BEGIN mask-relay-hosts NO (Norway, Akamai) 11/11 IPs
+# https://github.com/xiaoxizi-lyx/mask-relay-hosts
+172.224.93.3 mask.icloud.com mask-h2.icloud.com
+172.224.93.4 mask.icloud.com mask-h2.icloud.com
+172.224.93.5 mask.icloud.com mask-h2.icloud.com
+172.224.93.6 mask.icloud.com mask-h2.icloud.com
+172.224.93.7 mask.icloud.com mask-h2.icloud.com
+172.224.93.131 mask.icloud.com mask-h2.icloud.com
+172.224.93.132 mask.icloud.com mask-h2.icloud.com
+172.224.93.133 mask.icloud.com mask-h2.icloud.com
+172.224.93.134 mask.icloud.com mask-h2.icloud.com
+172.224.93.135 mask.icloud.com mask-h2.icloud.com
+172.224.93.136 mask.icloud.com mask-h2.icloud.com
+# END mask-relay-hosts NO

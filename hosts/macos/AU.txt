@@ -1,0 +1,27 @@
+# BEGIN mask-relay-hosts AU (Australia, Akamai+Apple) 24/37 IPs
+# https://github.com/xiaoxizi-lyx/mask-relay-hosts
+17.248.155.196 mask.icloud.com mask-h2.icloud.com
+17.248.155.197 mask.icloud.com mask-h2.icloud.com
+17.248.155.198 mask.icloud.com mask-h2.icloud.com
+17.250.64.69 mask.icloud.com mask-h2.icloud.com
+172.224.28.3 mask.icloud.com mask-h2.icloud.com
+172.224.28.4 mask.icloud.com mask-h2.icloud.com
+172.224.28.5 mask.icloud.com mask-h2.icloud.com
+172.224.29.4 mask.icloud.com mask-h2.icloud.com
+172.224.29.5 mask.icloud.com mask-h2.icloud.com
+172.224.29.6 mask.icloud.com mask-h2.icloud.com
+172.224.30.3 mask.icloud.com mask-h2.icloud.com
+172.224.30.4 mask.icloud.com mask-h2.icloud.com
+172.224.30.5 mask.icloud.com mask-h2.icloud.com
+172.224.30.6 mask.icloud.com mask-h2.icloud.com
+172.224.30.7 mask.icloud.com mask-h2.icloud.com
+172.224.30.8 mask.icloud.com mask-h2.icloud.com
+172.224.30.9 mask.icloud.com mask-h2.icloud.com
+172.224.30.10 mask.icloud.com mask-h2.icloud.com
+172.224.30.195 mask.icloud.com mask-h2.icloud.com
+172.224.30.196 mask.icloud.com mask-h2.icloud.com
+172.224.31.3 mask.icloud.com mask-h2.icloud.com
+172.224.31.4 mask.icloud.com mask-h2.icloud.com
+172.224.31.5 mask.icloud.com mask-h2.icloud.com
+172.224.31.6 mask.icloud.com mask-h2.icloud.com
+# END mask-relay-hosts AU

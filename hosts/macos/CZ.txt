@@ -1,0 +1,15 @@
+# BEGIN mask-relay-hosts CZ (Czechia, Akamai) 12/12 IPs
+# https://github.com/xiaoxizi-lyx/mask-relay-hosts
+172.224.37.131 mask.icloud.com mask-h2.icloud.com
+172.224.37.132 mask.icloud.com mask-h2.icloud.com
+172.224.37.133 mask.icloud.com mask-h2.icloud.com
+172.224.37.134 mask.icloud.com mask-h2.icloud.com
+172.224.37.135 mask.icloud.com mask-h2.icloud.com
+172.224.37.136 mask.icloud.com mask-h2.icloud.com
+172.224.37.195 mask.icloud.com mask-h2.icloud.com
+172.224.37.196 mask.icloud.com mask-h2.icloud.com
+172.224.37.197 mask.icloud.com mask-h2.icloud.com
+172.224.37.198 mask.icloud.com mask-h2.icloud.com
+172.224.37.199 mask.icloud.com mask-h2.icloud.com
+172.224.37.200 mask.icloud.com mask-h2.icloud.com
+# END mask-relay-hosts CZ

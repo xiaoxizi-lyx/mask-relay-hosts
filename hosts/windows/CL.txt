@@ -1,0 +1,18 @@
+# BEGIN mask-relay-hosts CL (Chile, Akamai) 15/15 IPs
+# https://github.com/xiaoxizi-lyx/mask-relay-hosts
+172.224.71.131 mask.icloud.com mask-h2.icloud.com
+172.224.71.132 mask.icloud.com mask-h2.icloud.com
+172.224.71.133 mask.icloud.com mask-h2.icloud.com
+172.224.71.134 mask.icloud.com mask-h2.icloud.com
+172.224.145.131 mask.icloud.com mask-h2.icloud.com
+172.224.145.132 mask.icloud.com mask-h2.icloud.com
+172.224.145.133 mask.icloud.com mask-h2.icloud.com
+172.224.145.134 mask.icloud.com mask-h2.icloud.com
+172.224.145.135 mask.icloud.com mask-h2.icloud.com
+172.224.145.136 mask.icloud.com mask-h2.icloud.com
+172.224.145.137 mask.icloud.com mask-h2.icloud.com
+172.224.145.138 mask.icloud.com mask-h2.icloud.com
+172.224.145.139 mask.icloud.com mask-h2.icloud.com
+172.224.145.140 mask.icloud.com mask-h2.icloud.com
+172.224.145.141 mask.icloud.com mask-h2.icloud.com
+# END mask-relay-hosts CL

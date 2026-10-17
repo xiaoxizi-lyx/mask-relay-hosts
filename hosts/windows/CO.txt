@@ -1,0 +1,11 @@
+# BEGIN mask-relay-hosts CO (Colombia, Akamai) 8/8 IPs
+# https://github.com/xiaoxizi-lyx/mask-relay-hosts
+172.224.176.3 mask.icloud.com mask-h2.icloud.com
+172.224.176.4 mask.icloud.com mask-h2.icloud.com
+172.224.176.5 mask.icloud.com mask-h2.icloud.com
+172.224.176.6 mask.icloud.com mask-h2.icloud.com
+172.224.176.131 mask.icloud.com mask-h2.icloud.com
+172.224.176.132 mask.icloud.com mask-h2.icloud.com
+172.224.176.133 mask.icloud.com mask-h2.icloud.com
+172.224.176.134 mask.icloud.com mask-h2.icloud.com
+# END mask-relay-hosts CO

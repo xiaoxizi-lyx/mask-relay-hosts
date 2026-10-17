@@ -1,0 +1,27 @@
+# BEGIN mask-relay-hosts CA (Canada, Akamai) 24/45 IPs
+# https://github.com/xiaoxizi-lyx/mask-relay-hosts
+172.224.91.4 mask.icloud.com mask-h2.icloud.com
+172.224.91.5 mask.icloud.com mask-h2.icloud.com
+172.224.91.6 mask.icloud.com mask-h2.icloud.com
+172.224.91.7 mask.icloud.com mask-h2.icloud.com
+172.224.91.8 mask.icloud.com mask-h2.icloud.com
+172.224.91.9 mask.icloud.com mask-h2.icloud.com
+172.224.91.10 mask.icloud.com mask-h2.icloud.com
+172.224.91.11 mask.icloud.com mask-h2.icloud.com
+172.224.91.12 mask.icloud.com mask-h2.icloud.com
+172.224.168.68 mask.icloud.com mask-h2.icloud.com
+172.224.168.69 mask.icloud.com mask-h2.icloud.com
+172.224.168.70 mask.icloud.com mask-h2.icloud.com
+172.224.168.71 mask.icloud.com mask-h2.icloud.com
+172.224.168.72 mask.icloud.com mask-h2.icloud.com
+172.224.168.73 mask.icloud.com mask-h2.icloud.com
+172.224.186.3 mask.icloud.com mask-h2.icloud.com
+172.224.186.4 mask.icloud.com mask-h2.icloud.com
+172.224.186.5 mask.icloud.com mask-h2.icloud.com
+172.224.186.6 mask.icloud.com mask-h2.icloud.com
+172.224.186.7 mask.icloud.com mask-h2.icloud.com
+172.224.186.8 mask.icloud.com mask-h2.icloud.com
+172.224.186.9 mask.icloud.com mask-h2.icloud.com
+172.224.186.10 mask.icloud.com mask-h2.icloud.com
+172.224.186.11 mask.icloud.com mask-h2.icloud.com
+# END mask-relay-hosts CA

@@ -1,0 +1,13 @@
+# BEGIN mask-relay-hosts DK-Apple (Denmark, Apple) 10/10 IPs
+# https://github.com/xiaoxizi-lyx/mask-relay-hosts
+17.248.181.132 mask.icloud.com mask-h2.icloud.com
+17.248.181.133 mask.icloud.com mask-h2.icloud.com
+17.248.181.134 mask.icloud.com mask-h2.icloud.com
+17.248.181.135 mask.icloud.com mask-h2.icloud.com
+17.248.181.136 mask.icloud.com mask-h2.icloud.com
+17.248.181.137 mask.icloud.com mask-h2.icloud.com
+17.248.249.4 mask.icloud.com mask-h2.icloud.com
+17.248.249.5 mask.icloud.com mask-h2.icloud.com
+17.248.249.6 mask.icloud.com mask-h2.icloud.com
+17.248.249.7 mask.icloud.com mask-h2.icloud.com
+# END mask-relay-hosts DK-Apple

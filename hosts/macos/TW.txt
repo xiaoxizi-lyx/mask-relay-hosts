@@ -1,0 +1,10 @@
+# BEGIN mask-relay-hosts TW (Taiwan, Apple) 7/7 IPs
+# https://github.com/xiaoxizi-lyx/mask-relay-hosts
+17.250.122.132 mask.icloud.com mask-h2.icloud.com
+17.250.122.133 mask.icloud.com mask-h2.icloud.com
+17.250.122.134 mask.icloud.com mask-h2.icloud.com
+17.250.122.135 mask.icloud.com mask-h2.icloud.com
+17.250.122.136 mask.icloud.com mask-h2.icloud.com
+17.250.122.137 mask.icloud.com mask-h2.icloud.com
+17.250.122.238 mask.icloud.com mask-h2.icloud.com
+# END mask-relay-hosts TW

@@ -1,0 +1,27 @@
+# BEGIN mask-relay-hosts HK-Apple (Hong Kong, Apple) 24/37 IPs
+# https://github.com/xiaoxizi-lyx/mask-relay-hosts
+17.248.152.98 mask.icloud.com mask-h2.icloud.com
+17.248.152.99 mask.icloud.com mask-h2.icloud.com
+17.248.152.100 mask.icloud.com mask-h2.icloud.com
+17.248.152.101 mask.icloud.com mask-h2.icloud.com
+17.248.152.102 mask.icloud.com mask-h2.icloud.com
+17.248.152.103 mask.icloud.com mask-h2.icloud.com
+17.248.152.104 mask.icloud.com mask-h2.icloud.com
+17.248.152.105 mask.icloud.com mask-h2.icloud.com
+17.248.152.106 mask.icloud.com mask-h2.icloud.com
+17.248.152.107 mask.icloud.com mask-h2.icloud.com
+17.248.152.108 mask.icloud.com mask-h2.icloud.com
+17.248.152.109 mask.icloud.com mask-h2.icloud.com
+17.248.152.110 mask.icloud.com mask-h2.icloud.com
+17.248.152.111 mask.icloud.com mask-h2.icloud.com
+17.248.152.112 mask.icloud.com mask-h2.icloud.com
+17.248.152.113 mask.icloud.com mask-h2.icloud.com
+17.248.152.130 mask.icloud.com mask-h2.icloud.com
+17.248.152.131 mask.icloud.com mask-h2.icloud.com
+17.248.152.132 mask.icloud.com mask-h2.icloud.com
+17.248.163.73 mask.icloud.com mask-h2.icloud.com
+17.248.163.74 mask.icloud.com mask-h2.icloud.com
+17.248.163.75 mask.icloud.com mask-h2.icloud.com
+17.248.163.76 mask.icloud.com mask-h2.icloud.com
+17.248.216.47 mask.icloud.com mask-h2.icloud.com
+# END mask-relay-hosts HK-Apple

@@ -1,0 +1,15 @@
+# BEGIN mask-relay-hosts PL (Poland, Akamai) 12/12 IPs
+# https://github.com/xiaoxizi-lyx/mask-relay-hosts
+172.224.204.3 mask.icloud.com mask-h2.icloud.com
+172.224.204.4 mask.icloud.com mask-h2.icloud.com
+172.224.204.5 mask.icloud.com mask-h2.icloud.com
+172.224.204.6 mask.icloud.com mask-h2.icloud.com
+172.224.204.7 mask.icloud.com mask-h2.icloud.com
+172.224.204.8 mask.icloud.com mask-h2.icloud.com
+172.224.204.131 mask.icloud.com mask-h2.icloud.com
+172.224.204.132 mask.icloud.com mask-h2.icloud.com
+172.224.204.133 mask.icloud.com mask-h2.icloud.com
+172.224.204.134 mask.icloud.com mask-h2.icloud.com
+172.224.204.135 mask.icloud.com mask-h2.icloud.com
+172.224.204.136 mask.icloud.com mask-h2.icloud.com
+# END mask-relay-hosts PL

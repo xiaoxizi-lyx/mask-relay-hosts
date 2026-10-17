@@ -1,0 +1,23 @@
+# BEGIN mask-relay-hosts ES-Apple (Spain, Apple) 20/20 IPs
+# https://github.com/xiaoxizi-lyx/mask-relay-hosts
+17.250.88.2 mask.icloud.com mask-h2.icloud.com
+17.250.88.3 mask.icloud.com mask-h2.icloud.com
+17.250.88.4 mask.icloud.com mask-h2.icloud.com
+17.250.88.5 mask.icloud.com mask-h2.icloud.com
+17.250.88.6 mask.icloud.com mask-h2.icloud.com
+17.250.88.7 mask.icloud.com mask-h2.icloud.com
+17.250.88.8 mask.icloud.com mask-h2.icloud.com
+17.250.88.9 mask.icloud.com mask-h2.icloud.com
+17.250.88.10 mask.icloud.com mask-h2.icloud.com
+17.250.88.11 mask.icloud.com mask-h2.icloud.com
+17.250.88.12 mask.icloud.com mask-h2.icloud.com
+17.250.88.13 mask.icloud.com mask-h2.icloud.com
+17.250.88.14 mask.icloud.com mask-h2.icloud.com
+17.250.88.15 mask.icloud.com mask-h2.icloud.com
+17.250.88.16 mask.icloud.com mask-h2.icloud.com
+17.250.88.17 mask.icloud.com mask-h2.icloud.com
+17.250.88.18 mask.icloud.com mask-h2.icloud.com
+17.250.88.19 mask.icloud.com mask-h2.icloud.com
+17.250.88.20 mask.icloud.com mask-h2.icloud.com
+17.250.88.21 mask.icloud.com mask-h2.icloud.com
+# END mask-relay-hosts ES-Apple

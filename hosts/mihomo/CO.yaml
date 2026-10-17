@@ -1,0 +1,7 @@
+# mask-relay-hosts · CO · 哥伦比亚 Colombia · Akamai · 8/8 IP
+# https://github.com/xiaoxizi-lyx/mask-relay-hosts
+# 合并到配置的 hosts: 段；dns.use-hosts 需为 true（默认即是）
+# Merge into the hosts: section of your config; dns.use-hosts must be true (default)
+hosts:
+  mask.icloud.com: [172.224.176.3, 172.224.176.4, 172.224.176.5, 172.224.176.6, 172.224.176.131, 172.224.176.132, 172.224.176.133, 172.224.176.134]
+  mask-h2.icloud.com: [172.224.176.3, 172.224.176.4, 172.224.176.5, 172.224.176.6, 172.224.176.131, 172.224.176.132, 172.224.176.133, 172.224.176.134]

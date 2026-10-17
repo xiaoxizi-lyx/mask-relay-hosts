@@ -1,0 +1,19 @@
+# BEGIN mask-relay-hosts RO (Romania, Akamai) 16/16 IPs
+# https://github.com/xiaoxizi-lyx/mask-relay-hosts
+172.224.38.3 mask.icloud.com mask-h2.icloud.com
+172.224.38.4 mask.icloud.com mask-h2.icloud.com
+172.224.38.5 mask.icloud.com mask-h2.icloud.com
+172.224.38.6 mask.icloud.com mask-h2.icloud.com
+172.224.38.131 mask.icloud.com mask-h2.icloud.com
+172.224.38.132 mask.icloud.com mask-h2.icloud.com
+172.224.38.133 mask.icloud.com mask-h2.icloud.com
+172.224.38.134 mask.icloud.com mask-h2.icloud.com
+172.224.194.3 mask.icloud.com mask-h2.icloud.com
+172.224.194.4 mask.icloud.com mask-h2.icloud.com
+172.224.194.5 mask.icloud.com mask-h2.icloud.com
+172.224.194.6 mask.icloud.com mask-h2.icloud.com
+172.224.194.7 mask.icloud.com mask-h2.icloud.com
+172.224.194.8 mask.icloud.com mask-h2.icloud.com
+172.224.194.9 mask.icloud.com mask-h2.icloud.com
+172.224.194.10 mask.icloud.com mask-h2.icloud.com
+# END mask-relay-hosts RO

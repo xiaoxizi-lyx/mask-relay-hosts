@@ -1,0 +1,8 @@
+# BEGIN mask-relay-hosts NZ (New Zealand, Akamai) 5/5 IPs
+# https://github.com/xiaoxizi-lyx/mask-relay-hosts
+172.224.32.3 mask.icloud.com mask-h2.icloud.com
+172.224.32.4 mask.icloud.com mask-h2.icloud.com
+172.224.32.5 mask.icloud.com mask-h2.icloud.com
+172.224.32.6 mask.icloud.com mask-h2.icloud.com
+172.224.32.7 mask.icloud.com mask-h2.icloud.com
+# END mask-relay-hosts NZ

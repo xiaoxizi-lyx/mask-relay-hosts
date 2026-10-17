@@ -1,0 +1,7 @@
+# mask-relay-hosts · AR · 阿根廷 Argentina · Akamai · 6/6 IP
+# https://github.com/xiaoxizi-lyx/mask-relay-hosts
+# 合并到配置的 hosts: 段；dns.use-hosts 需为 true（默认即是）
+# Merge into the hosts: section of your config; dns.use-hosts must be true (default)
+hosts:
+  mask.icloud.com: [172.224.17.3, 172.224.17.4, 172.224.17.5, 172.224.17.6, 172.224.17.7, 172.224.17.8]
+  mask-h2.icloud.com: [172.224.17.3, 172.224.17.4, 172.224.17.5, 172.224.17.6, 172.224.17.7, 172.224.17.8]

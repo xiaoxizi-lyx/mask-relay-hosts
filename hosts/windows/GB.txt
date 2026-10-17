@@ -1,0 +1,27 @@
+# BEGIN mask-relay-hosts GB (United Kingdom, Apple) 24/72 IPs
+# https://github.com/xiaoxizi-lyx/mask-relay-hosts
+17.248.180.114 mask.icloud.com mask-h2.icloud.com
+17.248.180.115 mask.icloud.com mask-h2.icloud.com
+17.248.180.144 mask.icloud.com mask-h2.icloud.com
+17.248.180.145 mask.icloud.com mask-h2.icloud.com
+17.250.80.194 mask.icloud.com mask-h2.icloud.com
+17.250.80.195 mask.icloud.com mask-h2.icloud.com
+17.250.80.196 mask.icloud.com mask-h2.icloud.com
+17.250.80.197 mask.icloud.com mask-h2.icloud.com
+17.250.80.198 mask.icloud.com mask-h2.icloud.com
+17.250.80.199 mask.icloud.com mask-h2.icloud.com
+17.250.83.186 mask.icloud.com mask-h2.icloud.com
+17.250.83.187 mask.icloud.com mask-h2.icloud.com
+17.250.83.188 mask.icloud.com mask-h2.icloud.com
+17.250.83.189 mask.icloud.com mask-h2.icloud.com
+17.250.83.194 mask.icloud.com mask-h2.icloud.com
+17.250.83.195 mask.icloud.com mask-h2.icloud.com
+17.252.62.2 mask.icloud.com mask-h2.icloud.com
+17.252.62.4 mask.icloud.com mask-h2.icloud.com
+17.252.62.5 mask.icloud.com mask-h2.icloud.com
+17.252.62.6 mask.icloud.com mask-h2.icloud.com
+17.252.62.7 mask.icloud.com mask-h2.icloud.com
+17.252.62.8 mask.icloud.com mask-h2.icloud.com
+17.252.62.9 mask.icloud.com mask-h2.icloud.com
+17.252.62.10 mask.icloud.com mask-h2.icloud.com
+# END mask-relay-hosts GB

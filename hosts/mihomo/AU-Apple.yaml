@@ -1,0 +1,7 @@
+# mask-relay-hosts · AU-Apple · 澳大利亚 Australia · Apple · 9/9 IP
+# https://github.com/xiaoxizi-lyx/mask-relay-hosts
+# 合并到配置的 hosts: 段；dns.use-hosts 需为 true（默认即是）
+# Merge into the hosts: section of your config; dns.use-hosts must be true (default)
+hosts:
+  mask.icloud.com: [17.248.155.196, 17.248.155.197, 17.248.155.198, 17.248.155.199, 17.248.155.200, 17.248.155.201, 17.248.155.202, 17.248.155.203, 17.250.64.69]
+  mask-h2.icloud.com: [17.248.155.196, 17.248.155.197, 17.248.155.198, 17.248.155.199, 17.248.155.200, 17.248.155.201, 17.248.155.202, 17.248.155.203, 17.250.64.69]

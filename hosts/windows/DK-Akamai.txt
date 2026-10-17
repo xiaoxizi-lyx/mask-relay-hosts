@@ -1,0 +1,13 @@
+# BEGIN mask-relay-hosts DK-Akamai (Denmark, Akamai) 10/10 IPs
+# https://github.com/xiaoxizi-lyx/mask-relay-hosts
+172.224.41.3 mask.icloud.com mask-h2.icloud.com
+172.224.41.4 mask.icloud.com mask-h2.icloud.com
+172.224.41.5 mask.icloud.com mask-h2.icloud.com
+172.224.41.6 mask.icloud.com mask-h2.icloud.com
+172.224.41.7 mask.icloud.com mask-h2.icloud.com
+172.224.42.3 mask.icloud.com mask-h2.icloud.com
+172.224.42.4 mask.icloud.com mask-h2.icloud.com
+172.224.42.5 mask.icloud.com mask-h2.icloud.com
+172.224.42.6 mask.icloud.com mask-h2.icloud.com
+172.224.42.7 mask.icloud.com mask-h2.icloud.com
+# END mask-relay-hosts DK-Akamai

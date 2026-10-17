@@ -1,0 +1,11 @@
+# BEGIN mask-relay-hosts KR (South Korea, Apple) 8/8 IPs
+# https://github.com/xiaoxizi-lyx/mask-relay-hosts
+17.250.125.2 mask.icloud.com mask-h2.icloud.com
+17.250.125.3 mask.icloud.com mask-h2.icloud.com
+17.250.125.4 mask.icloud.com mask-h2.icloud.com
+17.250.125.5 mask.icloud.com mask-h2.icloud.com
+17.250.125.6 mask.icloud.com mask-h2.icloud.com
+17.250.125.7 mask.icloud.com mask-h2.icloud.com
+17.250.125.8 mask.icloud.com mask-h2.icloud.com
+17.250.125.9 mask.icloud.com mask-h2.icloud.com
+# END mask-relay-hosts KR

@@ -1,0 +1,20 @@
+# BEGIN mask-relay-hosts SG-Akamai (Singapore, Akamai) 17/17 IPs
+# https://github.com/xiaoxizi-lyx/mask-relay-hosts
+172.224.26.134 mask.icloud.com mask-h2.icloud.com
+172.224.26.136 mask.icloud.com mask-h2.icloud.com
+172.224.26.137 mask.icloud.com mask-h2.icloud.com
+172.224.26.138 mask.icloud.com mask-h2.icloud.com
+172.224.26.139 mask.icloud.com mask-h2.icloud.com
+172.224.26.140 mask.icloud.com mask-h2.icloud.com
+172.224.26.141 mask.icloud.com mask-h2.icloud.com
+172.224.26.143 mask.icloud.com mask-h2.icloud.com
+172.224.26.144 mask.icloud.com mask-h2.icloud.com
+172.224.26.147 mask.icloud.com mask-h2.icloud.com
+172.224.26.150 mask.icloud.com mask-h2.icloud.com
+172.224.26.153 mask.icloud.com mask-h2.icloud.com
+172.224.26.154 mask.icloud.com mask-h2.icloud.com
+172.224.26.155 mask.icloud.com mask-h2.icloud.com
+172.224.26.161 mask.icloud.com mask-h2.icloud.com
+172.224.26.162 mask.icloud.com mask-h2.icloud.com
+172.224.26.163 mask.icloud.com mask-h2.icloud.com
+# END mask-relay-hosts SG-Akamai

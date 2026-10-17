@@ -1,0 +1,7 @@
+# mask-relay-hosts · ZA · 南非 South Africa · Apple · 6/6 IP
+# https://github.com/xiaoxizi-lyx/mask-relay-hosts
+# 合并到配置的 hosts: 段；dns.use-hosts 需为 true（默认即是）
+# Merge into the hosts: section of your config; dns.use-hosts must be true (default)
+hosts:
+  mask.icloud.com: [17.248.151.226, 17.248.151.227, 17.248.151.228, 17.248.151.229, 17.248.151.230, 17.248.151.231]
+  mask-h2.icloud.com: [17.248.151.226, 17.248.151.227, 17.248.151.228, 17.248.151.229, 17.248.151.230, 17.248.151.231]

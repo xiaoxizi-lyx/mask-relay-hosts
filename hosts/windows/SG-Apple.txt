@@ -1,0 +1,16 @@
+# BEGIN mask-relay-hosts SG-Apple (Singapore, Apple) 13/13 IPs
+# https://github.com/xiaoxizi-lyx/mask-relay-hosts
+17.248.154.174 mask.icloud.com mask-h2.icloud.com
+17.248.164.196 mask.icloud.com mask-h2.icloud.com
+17.248.164.197 mask.icloud.com mask-h2.icloud.com
+17.248.164.198 mask.icloud.com mask-h2.icloud.com
+17.248.164.199 mask.icloud.com mask-h2.icloud.com
+17.248.164.200 mask.icloud.com mask-h2.icloud.com
+17.248.164.201 mask.icloud.com mask-h2.icloud.com
+17.248.164.228 mask.icloud.com mask-h2.icloud.com
+17.248.164.229 mask.icloud.com mask-h2.icloud.com
+17.248.164.230 mask.icloud.com mask-h2.icloud.com
+17.248.164.231 mask.icloud.com mask-h2.icloud.com
+17.248.164.232 mask.icloud.com mask-h2.icloud.com
+17.248.164.233 mask.icloud.com mask-h2.icloud.com
+# END mask-relay-hosts SG-Apple

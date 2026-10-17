@@ -1,0 +1,13 @@
+# BEGIN mask-relay-hosts NL-Akamai (Netherlands, Akamai) 10/10 IPs
+# https://github.com/xiaoxizi-lyx/mask-relay-hosts
+172.224.175.3 mask.icloud.com mask-h2.icloud.com
+172.224.175.4 mask.icloud.com mask-h2.icloud.com
+172.224.175.5 mask.icloud.com mask-h2.icloud.com
+172.224.175.6 mask.icloud.com mask-h2.icloud.com
+172.224.175.7 mask.icloud.com mask-h2.icloud.com
+172.224.175.8 mask.icloud.com mask-h2.icloud.com
+172.224.175.9 mask.icloud.com mask-h2.icloud.com
+172.224.175.10 mask.icloud.com mask-h2.icloud.com
+172.224.175.11 mask.icloud.com mask-h2.icloud.com
+172.224.175.12 mask.icloud.com mask-h2.icloud.com
+# END mask-relay-hosts NL-Akamai

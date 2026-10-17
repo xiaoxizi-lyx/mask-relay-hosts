@@ -1,0 +1,9 @@
+# BEGIN mask-relay-hosts ZA (South Africa, Apple) 6/6 IPs
+# https://github.com/xiaoxizi-lyx/mask-relay-hosts
+17.248.151.226 mask.icloud.com mask-h2.icloud.com
+17.248.151.227 mask.icloud.com mask-h2.icloud.com
+17.248.151.228 mask.icloud.com mask-h2.icloud.com
+17.248.151.229 mask.icloud.com mask-h2.icloud.com
+17.248.151.230 mask.icloud.com mask-h2.icloud.com
+17.248.151.231 mask.icloud.com mask-h2.icloud.com
+# END mask-relay-hosts ZA

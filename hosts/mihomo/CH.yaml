@@ -1,0 +1,7 @@
+# mask-relay-hosts · CH · 瑞士 Switzerland · Akamai · 10/10 IP
+# https://github.com/xiaoxizi-lyx/mask-relay-hosts
+# 合并到配置的 hosts: 段；dns.use-hosts 需为 true（默认即是）
+# Merge into the hosts: section of your config; dns.use-hosts must be true (default)
+hosts:
+  mask.icloud.com: [172.224.55.4, 172.224.55.5, 172.224.55.6, 172.224.55.7, 172.224.55.8, 172.224.55.9, 172.224.55.10, 172.224.55.11, 172.224.55.12, 172.224.55.13]
+  mask-h2.icloud.com: [172.224.55.4, 172.224.55.5, 172.224.55.6, 172.224.55.7, 172.224.55.8, 172.224.55.9, 172.224.55.10, 172.224.55.11, 172.224.55.12, 172.224.55.13]
