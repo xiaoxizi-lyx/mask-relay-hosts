@@ -1,5 +1,10 @@
-# BEGIN mask-relay-hosts ES-Akamai (Spain, Akamai) 15/15 IPs
+# BEGIN mask-relay-hosts ES-Akamai (Spain, Akamai) 20/20 IPs
 # https://github.com/xiaoxizi-lyx/mask-relay-hosts
+172.224.53.4 mask.icloud.com mask-h2.icloud.com
+172.224.53.5 mask.icloud.com mask-h2.icloud.com
+172.224.53.6 mask.icloud.com mask-h2.icloud.com
+172.224.53.7 mask.icloud.com mask-h2.icloud.com
+172.224.53.8 mask.icloud.com mask-h2.icloud.com
 172.224.170.3 mask.icloud.com mask-h2.icloud.com
 172.224.170.4 mask.icloud.com mask-h2.icloud.com
 172.224.170.5 mask.icloud.com mask-h2.icloud.com

@@ -1,4 +1,4 @@
-# BEGIN mask-relay-hosts IN-Apple (India, Apple) 20/20 IPs
+# BEGIN mask-relay-hosts IN-Apple (India, Apple) 22/22 IPs
 # https://github.com/xiaoxizi-lyx/mask-relay-hosts
 17.248.153.66 mask.icloud.com mask-h2.icloud.com
 17.248.153.67 mask.icloud.com mask-h2.icloud.com
@@ -20,4 +20,6 @@
 17.248.153.83 mask.icloud.com mask-h2.icloud.com
 17.248.153.84 mask.icloud.com mask-h2.icloud.com
 17.248.153.85 mask.icloud.com mask-h2.icloud.com
+17.250.69.11 mask.icloud.com mask-h2.icloud.com
+17.250.69.12 mask.icloud.com mask-h2.icloud.com
 # END mask-relay-hosts IN-Apple

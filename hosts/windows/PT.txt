@@ -1,0 +1,9 @@
+# BEGIN mask-relay-hosts PT (Portugal, Akamai) 6/6 IPs
+# https://github.com/xiaoxizi-lyx/mask-relay-hosts
+172.224.56.195 mask.icloud.com mask-h2.icloud.com
+172.224.56.196 mask.icloud.com mask-h2.icloud.com
+172.224.56.197 mask.icloud.com mask-h2.icloud.com
+172.224.56.198 mask.icloud.com mask-h2.icloud.com
+172.224.56.199 mask.icloud.com mask-h2.icloud.com
+172.224.56.200 mask.icloud.com mask-h2.icloud.com
+# END mask-relay-hosts PT

@@ -1,4 +1,4 @@
-# BEGIN mask-relay-hosts US-Apple (United States, Apple) 24/357 IPs
+# BEGIN mask-relay-hosts US-Apple (United States, Apple) 24/358 IPs
 # https://github.com/xiaoxizi-lyx/mask-relay-hosts
 17.248.131.4 mask.icloud.com mask-h2.icloud.com
 17.248.134.12 mask.icloud.com mask-h2.icloud.com
@@ -20,7 +20,7 @@
 17.248.247.34 mask.icloud.com mask-h2.icloud.com
 17.248.247.35 mask.icloud.com mask-h2.icloud.com
 17.248.254.100 mask.icloud.com mask-h2.icloud.com
-17.250.49.3 mask.icloud.com mask-h2.icloud.com
+17.250.49.2 mask.icloud.com mask-h2.icloud.com
 17.250.96.98 mask.icloud.com mask-h2.icloud.com
 17.250.98.48 mask.icloud.com mask-h2.icloud.com
 17.250.98.49 mask.icloud.com mask-h2.icloud.com

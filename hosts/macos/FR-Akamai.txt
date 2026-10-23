@@ -1,7 +1,6 @@
-# BEGIN mask-relay-hosts FR-Akamai (France, Akamai) 12/12 IPs
+# BEGIN mask-relay-hosts FR-Akamai (France, Akamai) 11/11 IPs
 # https://github.com/xiaoxizi-lyx/mask-relay-hosts
 172.224.210.3 mask.icloud.com mask-h2.icloud.com
-172.224.210.4 mask.icloud.com mask-h2.icloud.com
 172.224.210.5 mask.icloud.com mask-h2.icloud.com
 172.224.210.6 mask.icloud.com mask-h2.icloud.com
 172.224.210.7 mask.icloud.com mask-h2.icloud.com
