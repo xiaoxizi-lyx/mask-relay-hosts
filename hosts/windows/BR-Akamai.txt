@@ -1,0 +1,27 @@
+# BEGIN mask-relay-hosts BR-Akamai (Brazil, Akamai) 24/54 IPs
+# https://github.com/xiaoxizi-lyx/mask-relay-hosts
+172.224.66.3 mask.icloud.com mask-h2.icloud.com
+172.224.66.4 mask.icloud.com mask-h2.icloud.com
+172.224.149.3 mask.icloud.com mask-h2.icloud.com
+172.224.149.4 mask.icloud.com mask-h2.icloud.com
+172.224.149.5 mask.icloud.com mask-h2.icloud.com
+172.224.149.6 mask.icloud.com mask-h2.icloud.com
+172.224.159.3 mask.icloud.com mask-h2.icloud.com
+172.224.159.5 mask.icloud.com mask-h2.icloud.com
+172.224.173.3 mask.icloud.com mask-h2.icloud.com
+172.224.173.4 mask.icloud.com mask-h2.icloud.com
+172.224.173.5 mask.icloud.com mask-h2.icloud.com
+172.224.173.6 mask.icloud.com mask-h2.icloud.com
+172.224.174.3 mask.icloud.com mask-h2.icloud.com
+172.224.174.4 mask.icloud.com mask-h2.icloud.com
+172.224.174.5 mask.icloud.com mask-h2.icloud.com
+172.224.174.6 mask.icloud.com mask-h2.icloud.com
+172.224.187.67 mask.icloud.com mask-h2.icloud.com
+172.224.187.68 mask.icloud.com mask-h2.icloud.com
+172.224.188.3 mask.icloud.com mask-h2.icloud.com
+172.224.188.4 mask.icloud.com mask-h2.icloud.com
+172.224.206.3 mask.icloud.com mask-h2.icloud.com
+172.224.206.4 mask.icloud.com mask-h2.icloud.com
+172.224.206.5 mask.icloud.com mask-h2.icloud.com
+172.224.206.6 mask.icloud.com mask-h2.icloud.com
+# END mask-relay-hosts BR-Akamai

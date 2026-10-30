@@ -1,4 +1,4 @@
-# BEGIN mask-relay-hosts US (United States, Akamai+Apple) 24/516 IPs
+# BEGIN mask-relay-hosts US (United States, Akamai+Apple) 24/513 IPs
 # https://github.com/xiaoxizi-lyx/mask-relay-hosts
 17.248.131.4 mask.icloud.com mask-h2.icloud.com
 17.248.134.12 mask.icloud.com mask-h2.icloud.com

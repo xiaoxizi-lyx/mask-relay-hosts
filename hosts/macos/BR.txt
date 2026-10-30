@@ -1,27 +1,27 @@
-# BEGIN mask-relay-hosts BR (Brazil, Akamai) 24/29 IPs
+# BEGIN mask-relay-hosts BR (Brazil, Akamai+Apple) 24/78 IPs
 # https://github.com/xiaoxizi-lyx/mask-relay-hosts
+17.250.104.14 mask.icloud.com mask-h2.icloud.com
+17.250.104.15 mask.icloud.com mask-h2.icloud.com
 172.224.66.3 mask.icloud.com mask-h2.icloud.com
 172.224.66.4 mask.icloud.com mask-h2.icloud.com
-172.224.66.5 mask.icloud.com mask-h2.icloud.com
-172.224.66.6 mask.icloud.com mask-h2.icloud.com
-172.224.66.7 mask.icloud.com mask-h2.icloud.com
+172.224.149.3 mask.icloud.com mask-h2.icloud.com
+172.224.149.4 mask.icloud.com mask-h2.icloud.com
+172.224.149.5 mask.icloud.com mask-h2.icloud.com
+172.224.149.6 mask.icloud.com mask-h2.icloud.com
 172.224.159.3 mask.icloud.com mask-h2.icloud.com
 172.224.159.5 mask.icloud.com mask-h2.icloud.com
-172.224.159.6 mask.icloud.com mask-h2.icloud.com
+172.224.173.3 mask.icloud.com mask-h2.icloud.com
+172.224.173.4 mask.icloud.com mask-h2.icloud.com
+172.224.173.5 mask.icloud.com mask-h2.icloud.com
+172.224.173.6 mask.icloud.com mask-h2.icloud.com
 172.224.174.3 mask.icloud.com mask-h2.icloud.com
 172.224.174.4 mask.icloud.com mask-h2.icloud.com
 172.224.174.5 mask.icloud.com mask-h2.icloud.com
 172.224.174.6 mask.icloud.com mask-h2.icloud.com
-172.224.174.7 mask.icloud.com mask-h2.icloud.com
-172.224.174.8 mask.icloud.com mask-h2.icloud.com
-172.224.174.195 mask.icloud.com mask-h2.icloud.com
-172.224.174.196 mask.icloud.com mask-h2.icloud.com
 172.224.187.67 mask.icloud.com mask-h2.icloud.com
-172.224.187.68 mask.icloud.com mask-h2.icloud.com
-172.224.187.69 mask.icloud.com mask-h2.icloud.com
-172.224.187.70 mask.icloud.com mask-h2.icloud.com
 172.224.188.3 mask.icloud.com mask-h2.icloud.com
-172.224.188.4 mask.icloud.com mask-h2.icloud.com
-172.224.188.5 mask.icloud.com mask-h2.icloud.com
-172.224.188.6 mask.icloud.com mask-h2.icloud.com
+172.224.206.3 mask.icloud.com mask-h2.icloud.com
+172.224.206.4 mask.icloud.com mask-h2.icloud.com
+172.224.206.5 mask.icloud.com mask-h2.icloud.com
+172.224.206.6 mask.icloud.com mask-h2.icloud.com
 # END mask-relay-hosts BR
