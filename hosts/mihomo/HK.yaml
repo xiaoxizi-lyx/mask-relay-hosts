@@ -1,4 +1,4 @@
-# mask-relay-hosts · HK · 香港 Hong Kong · Akamai+Apple · 24/46 IP
+# mask-relay-hosts · HK · 香港 Hong Kong · Akamai+Apple · 24/45 IP
 # https://github.com/xiaoxizi-lyx/mask-relay-hosts
 # 合并到配置的 hosts: 段；dns.use-hosts 需为 true（默认即是）
 # Merge into the hosts: section of your config; dns.use-hosts must be true (default)

@@ -1,4 +1,4 @@
-# BEGIN mask-relay-hosts HK-Apple (Hong Kong, Apple) 24/37 IPs
+# BEGIN mask-relay-hosts HK-Apple (Hong Kong, Apple) 24/36 IPs
 # https://github.com/xiaoxizi-lyx/mask-relay-hosts
 17.248.152.98 mask.icloud.com mask-h2.icloud.com
 17.248.152.99 mask.icloud.com mask-h2.icloud.com
