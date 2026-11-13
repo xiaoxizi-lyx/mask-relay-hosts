@@ -1,6 +1,6 @@
 # 分组索引 / Group index
 
-数据 Data：TUM 扫描 2026-11-03（保留窗口 window：2026-11-03、2026-10-27、2026-10-20、2026-10-13）
+数据 Data：TUM 扫描 2026-11-10（保留窗口 window：2026-11-10、2026-11-03、2026-10-27、2026-10-20）
 
 每个 hosts 文件最多 24 个 IP（在城市和 /24 之间平均挑选）；`ip-list` 为该组全部 IP。
 Each hosts file holds at most 24 IPs (spread across cities and /24s); `ip-list` has every IP of the group.
@@ -10,8 +10,8 @@ Each hosts file holds at most 24 IPs (spread across cities and /24s); `ip-list` 
 | **HK** | 🇭🇰 香港 Hong Kong | Akamai + Apple | 香港 Hong Kong、将军澳 Tseung Kwan O | 24 / 45 | [dnsmasq](dnsmasq/HK.conf) · [mihomo](mihomo/HK.yaml) · [Windows](windows/HK.txt) · [macOS](macos/HK.txt) · [IP](ip-list/HK.txt) |
 | **HK-Akamai** | 🇭🇰 香港 Hong Kong | Akamai | 将军澳 Tseung Kwan O | 9 / 9 | [dnsmasq](dnsmasq/HK-Akamai.conf) · [mihomo](mihomo/HK-Akamai.yaml) · [Windows](windows/HK-Akamai.txt) · [macOS](macos/HK-Akamai.txt) · [IP](ip-list/HK-Akamai.txt) |
 | **HK-Apple** | 🇭🇰 香港 Hong Kong | Apple | 香港 Hong Kong | 24 / 36 | [dnsmasq](dnsmasq/HK-Apple.conf) · [mihomo](mihomo/HK-Apple.yaml) · [Windows](windows/HK-Apple.txt) · [macOS](macos/HK-Apple.txt) · [IP](ip-list/HK-Apple.txt) |
-| **IN** | 🇮🇳 印度 India | Akamai + Apple | 孟买 Mumbai、金奈 Chennai | 24 / 49 | [dnsmasq](dnsmasq/IN.conf) · [mihomo](mihomo/IN.yaml) · [Windows](windows/IN.txt) · [macOS](macos/IN.txt) · [IP](ip-list/IN.txt) |
-| **IN-Akamai** | 🇮🇳 印度 India | Akamai | 孟买 Mumbai、金奈 Chennai | 24 / 27 | [dnsmasq](dnsmasq/IN-Akamai.conf) · [mihomo](mihomo/IN-Akamai.yaml) · [Windows](windows/IN-Akamai.txt) · [macOS](macos/IN-Akamai.txt) · [IP](ip-list/IN-Akamai.txt) |
+| **IN** | 🇮🇳 印度 India | Akamai + Apple | 孟买 Mumbai、金奈 Chennai | 24 / 50 | [dnsmasq](dnsmasq/IN.conf) · [mihomo](mihomo/IN.yaml) · [Windows](windows/IN.txt) · [macOS](macos/IN.txt) · [IP](ip-list/IN.txt) |
+| **IN-Akamai** | 🇮🇳 印度 India | Akamai | 孟买 Mumbai、金奈 Chennai | 24 / 28 | [dnsmasq](dnsmasq/IN-Akamai.conf) · [mihomo](mihomo/IN-Akamai.yaml) · [Windows](windows/IN-Akamai.txt) · [macOS](macos/IN-Akamai.txt) · [IP](ip-list/IN-Akamai.txt) |
 | **IN-Apple** | 🇮🇳 印度 India | Apple | 孟买 Mumbai、金奈 Chennai | 22 / 22 | [dnsmasq](dnsmasq/IN-Apple.conf) · [mihomo](mihomo/IN-Apple.yaml) · [Windows](windows/IN-Apple.txt) · [macOS](macos/IN-Apple.txt) · [IP](ip-list/IN-Apple.txt) |
 | **JP** | 🇯🇵 日本 Japan | Akamai + Apple | 大阪 Osaka、东京 Tokyo、茨木 Ibaraki | 24 / 166 | [dnsmasq](dnsmasq/JP.conf) · [mihomo](mihomo/JP.yaml) · [Windows](windows/JP.txt) · [macOS](macos/JP.txt) · [IP](ip-list/JP.txt) |
 | **JP-Akamai** | 🇯🇵 日本 Japan | Akamai | 大阪 Osaka、东京 Tokyo、茨木 Ibaraki | 24 / 109 | [dnsmasq](dnsmasq/JP-Akamai.conf) · [mihomo](mihomo/JP-Akamai.yaml) · [Windows](windows/JP-Akamai.txt) · [macOS](macos/JP-Akamai.txt) · [IP](ip-list/JP-Akamai.txt) |
@@ -59,8 +59,8 @@ Each hosts file holds at most 24 IPs (spread across cities and /24s); `ip-list` 
 | **BR-Apple** | 🇧🇷 巴西 Brazil | Apple | 圣保罗 São Paulo | 24 / 24 | [dnsmasq](dnsmasq/BR-Apple.conf) · [mihomo](mihomo/BR-Apple.yaml) · [Windows](windows/BR-Apple.txt) · [macOS](macos/BR-Apple.txt) · [IP](ip-list/BR-Apple.txt) |
 | **CL** | 🇨🇱 智利 Chile | Akamai | 圣地亚哥 Santiago | 15 / 15 | [dnsmasq](dnsmasq/CL.conf) · [mihomo](mihomo/CL.yaml) · [Windows](windows/CL.txt) · [macOS](macos/CL.txt) · [IP](ip-list/CL.txt) |
 | **CO** | 🇨🇴 哥伦比亚 Colombia | Akamai | 波哥大 Bogotá | 8 / 8 | [dnsmasq](dnsmasq/CO.conf) · [mihomo](mihomo/CO.yaml) · [Windows](windows/CO.txt) · [macOS](macos/CO.txt) · [IP](ip-list/CO.txt) |
-| **AU** | 🇦🇺 澳大利亚 Australia | Akamai + Apple | 悉尼 Sydney、墨尔本 Melbourne、珀斯 Perth | 24 / 42 | [dnsmasq](dnsmasq/AU.conf) · [mihomo](mihomo/AU.yaml) · [Windows](windows/AU.txt) · [macOS](macos/AU.txt) · [IP](ip-list/AU.txt) |
-| **AU-Akamai** | 🇦🇺 澳大利亚 Australia | Akamai | 悉尼 Sydney、墨尔本 Melbourne、珀斯 Perth | 24 / 28 | [dnsmasq](dnsmasq/AU-Akamai.conf) · [mihomo](mihomo/AU-Akamai.yaml) · [Windows](windows/AU-Akamai.txt) · [macOS](macos/AU-Akamai.txt) · [IP](ip-list/AU-Akamai.txt) |
+| **AU** | 🇦🇺 澳大利亚 Australia | Akamai + Apple | 悉尼 Sydney、墨尔本 Melbourne、珀斯 Perth、布里斯班 Brisbane | 24 / 43 | [dnsmasq](dnsmasq/AU.conf) · [mihomo](mihomo/AU.yaml) · [Windows](windows/AU.txt) · [macOS](macos/AU.txt) · [IP](ip-list/AU.txt) |
+| **AU-Akamai** | 🇦🇺 澳大利亚 Australia | Akamai | 悉尼 Sydney、墨尔本 Melbourne、珀斯 Perth、布里斯班 Brisbane | 24 / 29 | [dnsmasq](dnsmasq/AU-Akamai.conf) · [mihomo](mihomo/AU-Akamai.yaml) · [Windows](windows/AU-Akamai.txt) · [macOS](macos/AU-Akamai.txt) · [IP](ip-list/AU-Akamai.txt) |
 | **AU-Apple** | 🇦🇺 澳大利亚 Australia | Apple | 悉尼 Sydney、墨尔本 Melbourne | 14 / 14 | [dnsmasq](dnsmasq/AU-Apple.conf) · [mihomo](mihomo/AU-Apple.yaml) · [Windows](windows/AU-Apple.txt) · [macOS](macos/AU-Apple.txt) · [IP](ip-list/AU-Apple.txt) |
 | **NZ** | 🇳🇿 新西兰 New Zealand | Akamai | 奥克兰 Auckland | 5 / 5 | [dnsmasq](dnsmasq/NZ.conf) · [mihomo](mihomo/NZ.yaml) · [Windows](windows/NZ.txt) · [macOS](macos/NZ.txt) · [IP](ip-list/NZ.txt) |
 | **ZA** | 🇿🇦 南非 South Africa | Apple | 米德兰德 Midrand | 6 / 6 | [dnsmasq](dnsmasq/ZA.conf) · [mihomo](mihomo/ZA.yaml) · [Windows](windows/ZA.txt) · [macOS](macos/ZA.txt) · [IP](ip-list/ZA.txt) |

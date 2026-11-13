@@ -1,4 +1,4 @@
-# BEGIN mask-relay-hosts IN (India, Akamai+Apple) 24/49 IPs
+# BEGIN mask-relay-hosts IN (India, Akamai+Apple) 24/50 IPs
 # https://github.com/xiaoxizi-lyx/mask-relay-hosts
 17.248.153.66 mask.icloud.com mask-h2.icloud.com
 17.248.153.67 mask.icloud.com mask-h2.icloud.com
@@ -6,10 +6,10 @@
 17.248.153.69 mask.icloud.com mask-h2.icloud.com
 17.250.69.11 mask.icloud.com mask-h2.icloud.com
 17.250.69.12 mask.icloud.com mask-h2.icloud.com
+172.224.18.3 mask.icloud.com mask-h2.icloud.com
 172.224.18.4 mask.icloud.com mask-h2.icloud.com
 172.224.18.5 mask.icloud.com mask-h2.icloud.com
 172.224.18.6 mask.icloud.com mask-h2.icloud.com
-172.224.18.7 mask.icloud.com mask-h2.icloud.com
 172.224.35.3 mask.icloud.com mask-h2.icloud.com
 172.224.35.4 mask.icloud.com mask-h2.icloud.com
 172.224.35.5 mask.icloud.com mask-h2.icloud.com
