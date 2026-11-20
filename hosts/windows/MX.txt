@@ -1,0 +1,27 @@
+# BEGIN mask-relay-hosts MX (Mexico, Akamai) 24/24 IPs
+# https://github.com/xiaoxizi-lyx/mask-relay-hosts
+172.224.205.3 mask.icloud.com mask-h2.icloud.com
+172.224.205.4 mask.icloud.com mask-h2.icloud.com
+172.224.205.5 mask.icloud.com mask-h2.icloud.com
+172.224.205.6 mask.icloud.com mask-h2.icloud.com
+172.224.205.7 mask.icloud.com mask-h2.icloud.com
+172.224.205.8 mask.icloud.com mask-h2.icloud.com
+172.224.205.9 mask.icloud.com mask-h2.icloud.com
+172.224.205.10 mask.icloud.com mask-h2.icloud.com
+172.224.205.11 mask.icloud.com mask-h2.icloud.com
+172.224.205.12 mask.icloud.com mask-h2.icloud.com
+172.224.205.13 mask.icloud.com mask-h2.icloud.com
+172.224.205.14 mask.icloud.com mask-h2.icloud.com
+172.224.205.131 mask.icloud.com mask-h2.icloud.com
+172.224.205.132 mask.icloud.com mask-h2.icloud.com
+172.224.205.133 mask.icloud.com mask-h2.icloud.com
+172.224.205.134 mask.icloud.com mask-h2.icloud.com
+172.224.205.135 mask.icloud.com mask-h2.icloud.com
+172.224.205.136 mask.icloud.com mask-h2.icloud.com
+172.224.205.137 mask.icloud.com mask-h2.icloud.com
+172.224.205.138 mask.icloud.com mask-h2.icloud.com
+172.224.205.139 mask.icloud.com mask-h2.icloud.com
+172.224.205.140 mask.icloud.com mask-h2.icloud.com
+172.224.205.141 mask.icloud.com mask-h2.icloud.com
+172.224.205.142 mask.icloud.com mask-h2.icloud.com
+# END mask-relay-hosts MX
