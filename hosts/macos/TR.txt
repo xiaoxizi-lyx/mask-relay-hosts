@@ -1,4 +1,4 @@
-# BEGIN mask-relay-hosts TR (Turkey, Akamai) 9/9 IPs
+# BEGIN mask-relay-hosts TR (Turkey, Akamai) 8/8 IPs
 # https://github.com/xiaoxizi-lyx/mask-relay-hosts
 172.224.106.4 mask.icloud.com mask-h2.icloud.com
 172.224.106.5 mask.icloud.com mask-h2.icloud.com
@@ -8,5 +8,4 @@
 172.224.106.9 mask.icloud.com mask-h2.icloud.com
 172.224.106.10 mask.icloud.com mask-h2.icloud.com
 172.224.106.11 mask.icloud.com mask-h2.icloud.com
-172.224.106.207 mask.icloud.com mask-h2.icloud.com
 # END mask-relay-hosts TR

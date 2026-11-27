@@ -1,4 +1,4 @@
-# mask-relay-hosts · FR · 法国 France · Akamai+Apple · 24/33 IP
+# mask-relay-hosts · FR · 法国 France · Akamai+Apple · 24/32 IP
 # https://github.com/xiaoxizi-lyx/mask-relay-hosts
 # 合并到配置的 hosts: 段；dns.use-hosts 需为 true（默认即是）
 # Merge into the hosts: section of your config; dns.use-hosts must be true (default)
